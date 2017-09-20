@@ -9,14 +9,14 @@
   <title>首坑,Hexo安装止痛 | 猿来如此</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="首坑，我们来谈谈人生……以下省略无数字……结束。好吧刚来就这样是不对的，那么你的人生是什么样子的呢，最近我看到了一篇很老的文字，是facebook上发的一组漫画，也许会给大家很多的感慨。但今天，开始这里的第一篇文字，我们不是来感概人生的，本来放弃了写(zhi)作(liao)很多的我，发现随着年龄的增长，很多文字还是需要留下来的，不然……不出半天就会忘记的……对于一个程序员的成长来说，更是不停的填坑">
-<meta name="keywords" content="开发者,程序猿,吃货">
+<meta name="keywords" content="npm,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="首坑,Hexo安装止痛">
 <meta property="og:url" content="http://yoursite.com/2017/09/20/tips1-how-to-install-hexo-well/index.html">
 <meta property="og:site_name" content="猿来如此">
 <meta property="og:description" content="首坑，我们来谈谈人生……以下省略无数字……结束。好吧刚来就这样是不对的，那么你的人生是什么样子的呢，最近我看到了一篇很老的文字，是facebook上发的一组漫画，也许会给大家很多的感慨。但今天，开始这里的第一篇文字，我们不是来感概人生的，本来放弃了写(zhi)作(liao)很多的我，发现随着年龄的增长，很多文字还是需要留下来的，不然……不出半天就会忘记的……对于一个程序员的成长来说，更是不停的填坑">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-20T21:40:29.000Z">
+<meta property="og:updated_time" content="2017-09-20T21:48:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="首坑,Hexo安装止痛">
 <meta name="twitter:description" content="首坑，我们来谈谈人生……以下省略无数字……结束。好吧刚来就这样是不对的，那么你的人生是什么样子的呢，最近我看到了一篇很老的文字，是facebook上发的一组漫画，也许会给大家很多的感慨。但今天，开始这里的第一篇文字，我们不是来感概人生的，本来放弃了写(zhi)作(liao)很多的我，发现随着年龄的增长，很多文字还是需要留下来的，不然……不出半天就会忘记的……对于一个程序员的成长来说，更是不停的填坑">
@@ -60,7 +60,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/categories/keng/">挖坑填坑</a></li>
 	        
 			</ul>
 		</nav>
@@ -140,7 +140,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/categories/keng/">挖坑填坑</a></li>
 		        
 				</ul>
 			</nav>
@@ -211,7 +211,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/keng//" class="article-tag-list-link color5">keng</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -422,6 +448,14 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">npm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
