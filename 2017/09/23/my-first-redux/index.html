@@ -6,16 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>猿来如此</title>
+  <title>初次的Redux | 猿来如此</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="开发者,程序猿,吃货">
-<meta property="og:type" content="website">
-<meta property="og:title" content="猿来如此">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="惯例，大家习惯就好，本人略微有点说明文档控，收到什么东西的时候会先看说明书，以下Redux官方文档虽然，也知道很多时候说明书写的很烂，可能不如上手快，不过可能是曾经写苦苦的跟着项目写过说明文档的经历吧，一致以来对于说明文档有着执着的特殊癖好。所幸，Redux的文档还是写的很像样子的。为毛做为一个后端猿类，在大后方掌握生杀大权的高端猿类，会来关注前端的技术呢，高大上的理由，可以是做为一个自诩的万能全">
+<meta name="keywords" content="开发者,程序猿,吃货">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初次的Redux">
+<meta property="og:url" content="http://yoursite.com/2017/09/23/my-first-redux/index.html">
 <meta property="og:site_name" content="猿来如此">
+<meta property="og:description" content="惯例，大家习惯就好，本人略微有点说明文档控，收到什么东西的时候会先看说明书，以下Redux官方文档虽然，也知道很多时候说明书写的很烂，可能不如上手快，不过可能是曾经写苦苦的跟着项目写过说明文档的经历吧，一致以来对于说明文档有着执着的特殊癖好。所幸，Redux的文档还是写的很像样子的。为毛做为一个后端猿类，在大后方掌握生杀大权的高端猿类，会来关注前端的技术呢，高大上的理由，可以是做为一个自诩的万能全">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/images/webfrontrevo.jpg">
+<meta property="og:image" content="http://yoursite.com/images/ars.png">
+<meta property="og:image" content="http://yoursite.com/images/reduxflow.jpg">
+<meta property="og:updated_time" content="2017-09-23T23:11:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="猿来如此">
+<meta name="twitter:title" content="初次的Redux">
+<meta name="twitter:description" content="惯例，大家习惯就好，本人略微有点说明文档控，收到什么东西的时候会先看说明书，以下Redux官方文档虽然，也知道很多时候说明书写的很烂，可能不如上手快，不过可能是曾经写苦苦的跟着项目写过说明文档的经历吧，一致以来对于说明文档有着执着的特殊癖好。所幸，Redux的文档还是写的很像样子的。为毛做为一个后端猿类，在大后方掌握生杀大权的高端猿类，会来关注前端的技术呢，高大上的理由，可以是做为一个自诩的万能全">
+<meta name="twitter:image" content="http://yoursite.com/images/webfrontrevo.jpg">
   
     <link rel="alternative" href="/atom.xml" title="猿来如此" type="application/atom+xml">
   
@@ -143,16 +151,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-my-first-redux" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-my-first-redux" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/23/my-first-redux/">初次的Redux</a>
+    <h1 class="article-title" itemprop="name">
+      初次的Redux
     </h1>
   
 
@@ -182,16 +188,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/23/my-first-redux/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/23/my-first-redux/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/20/tips1-how-to-install-hexo-well/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">首坑,Hexo安装止痛</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -211,174 +276,14 @@
 
 
 
-
   
-    <article id="post-tips1-how-to-install-hexo-well" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/20/tips1-how-to-install-hexo-well/">首坑,Hexo安装止痛</a>
-    </h1>
   
 
-        
-        <a href="/2017/09/20/tips1-how-to-install-hexo-well/" class="archive-article-date">
-  	<time datetime="2017-09-20T20:14:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首坑，我们来谈谈人生……以下省略无数字……结束。好吧刚来就这样是不对的，那么你的人生是什么样子的呢，最近我看到了<a href="http://www.sohu.com/a/136879532_470640" target="_blank" rel="external">一篇很老的文字，是facebook上发的一组漫画</a>，也许会给大家很多的感慨。<br><br>但今天，开始这里的第一篇文字，我们不是来感概人生的，本来放弃了写(zhi)作(liao)很多的我，发现随着年龄的增长，很多文字还是需要留下来的，不然……不出半天就会忘记的……<br>对于一个程序员的成长来说，更是不停的填坑的过程，不光是自己挖的，前辈们的挖坑能力是你永远无法估计的。一代代的坑，一代代的填。如此而已。因此，有个地方讲一讲那些年自己遇到的坑，也是不错的，以防以后再遇到，起码别掉进自己填过的坑里，也就可以了。<br><br>在安装hexo的过程中，以为一切都会是风平浪静的，一个命令，你能坑到哪里去<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>结果，硬是破了我半个小时的时间。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules</div><div class="line">.....</div></pre></td></tr></table></figure></p>
-<p>莫要忘记sudo…<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>但是还是有这样的坑，记得更新下npm<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&gt; hexo-util@0.6.1 build:highlight /usr/local/lib/node_modules/hexo-cli/node_modules/hexo-util</div><div class="line">&gt; node scripts/build_highlight_alias.js &gt; highlight_alias.json</div><div class="line"></div><div class="line">sh: highlight_alias.json: Permission denied</div><div class="line">npm ERR! code ELIFECYCLE</div><div class="line">┌────────────────────────────────────────────────────────────┐</div><div class="line">│                  npm update check failed                   │</div><div class="line">│            Try running with sudo or get access             │</div><div class="line">│            to the local update config store via            │</div><div class="line">│ sudo chown -R $USER:$(id -gn $USER) /Users/joshuaz/.config │</div><div class="line">└────────────────────────────────────────────────────────────┘</div><div class="line">   ╭─────────────────────────────────────╮</div><div class="line">   │                                     │</div><div class="line">   │   Update available 5.4.0 → 5.4.2    │</div><div class="line">   │     Run npm i -g npm to update      │</div><div class="line">   │                                     │</div><div class="line">   ╰─────────────────────────────────────╯</div><div class="line">npm ERR! A complete log of this run can be found in:</div></pre></td></tr></table></figure></p>
-<p>最后的最后，才用下面这个命令解决了安装的问题， 所以记得npm要查查permission，尤其-g了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo-cli  --unsafe-perm=true --allow-root</div></pre></td></tr></table></figure></p>
-<p>以下是：<br><a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions" target="_blank" rel="external">npm permission 快速学习入口</a></p>
-<p><a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">hexo官方安装指南</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/keng//" class="article-tag-list-link color5">keng</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/20/tips1-how-to-install-hexo-well/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/20/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2017/09/20/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-20T19:14:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/20/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -401,8 +306,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
