@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 猿来如此</title>
+  <title>倒灌react，系列一 | 猿来如此</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="开发者,程序猿,吃货">
-<meta property="og:type" content="website">
-<meta property="og:title" content="猿来如此">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="我的预感极其不好，感觉最近不得不好好纠结一下前端的技术了。太多的东西已经转移到前端处理。而且可以不可以让我优雅的和我的后端好好的静静工作啊，我的一丝不苟的C／C++，我的商业精英气质的Java，我的甜甜腻腻的C#，我的草根王子的PHP，还有我的王霸气质的python，都是我这么多年的好伙伴，为毛这个世界上会有javascript这货的出现，就算是js人家也无所谓，可这个看似酷哥一脸生人莫进的rea">
+<meta name="keywords" content="frontend,react">
+<meta property="og:type" content="article">
+<meta property="og:title" content="倒灌react，系列一">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/learn-react-1/index.html">
 <meta property="og:site_name" content="猿来如此">
+<meta property="og:description" content="我的预感极其不好，感觉最近不得不好好纠结一下前端的技术了。太多的东西已经转移到前端处理。而且可以不可以让我优雅的和我的后端好好的静静工作啊，我的一丝不苟的C／C++，我的商业精英气质的Java，我的甜甜腻腻的C#，我的草根王子的PHP，还有我的王霸气质的python，都是我这么多年的好伙伴，为毛这个世界上会有javascript这货的出现，就算是js人家也无所谓，可这个看似酷哥一脸生人莫进的rea">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-25T23:29:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="猿来如此">
+<meta name="twitter:title" content="倒灌react，系列一">
+<meta name="twitter:description" content="我的预感极其不好，感觉最近不得不好好纠结一下前端的技术了。太多的东西已经转移到前端处理。而且可以不可以让我优雅的和我的后端好好的静静工作啊，我的一丝不苟的C／C++，我的商业精英气质的Java，我的甜甜腻腻的C#，我的草根王子的PHP，还有我的王霸气质的python，都是我这么多年的好伙伴，为毛这个世界上会有javascript这货的出现，就算是js人家也无所谓，可这个看似酷哥一脸生人莫进的rea">
   
     <link rel="alternative" href="/atom.xml" title="猿来如此" type="application/atom+xml">
   
@@ -143,36 +147,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-learn-react-1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/25/learn-react-1/" class="archive-article-date">
-  	<time datetime="2017-09-25T23:14:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/25/learn-react-1/">倒灌react，系列一</a>
+    <h1 class="article-title" itemprop="name">
+      倒灌react，系列一
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/09/25/learn-react-1/" class="archive-article-date">
+  	<time datetime="2017-09-25T23:14:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我的预感极其不好，感觉最近不得不好好纠结一下前端的技术了。太多的东西已经转移到前端处理。而且可以不可以让我优雅的和我的后端好好的静静工作啊，我的一丝不苟的C／C++，我的商业精英气质的Java，我的甜甜腻腻的C#，我的草根王子的PHP，还有我的王霸气质的python，都是我这么多年的好伙伴，为毛这个世界上会有javascript这货的出现，就算是js人家也无所谓，可这个看似酷哥一脸生人莫进的react，真的是我得先凌乱个几个小时。<br>可是，既然已经被逼到眼前了，某猿也不能示弱，虽然，感觉什么都是一脸懵逼吧。但也得硬着头皮头皮，好好拆解一番。<br>这货最核心的东西，也是搞得我很头疼的玩意，就是props 和 state，以下这个代码很好的提示了我啥是props<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">function Welcome(props) &#123;</div><div class="line">  return &lt;h1&gt;Hello, &#123;props.name&#125;&lt;/h1&gt;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function App() &#123;</div><div class="line">  return (</div><div class="line">    &lt;div&gt;</div><div class="line">      &lt;Welcome name=&quot;Sara&quot; /&gt;</div><div class="line">      &lt;Welcome name=&quot;Cahal&quot; /&gt;</div><div class="line">      &lt;Welcome name=&quot;Edite&quot; /&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">  );</div><div class="line">&#125;</div><div class="line"></div><div class="line">ReactDOM.render(</div><div class="line">  &lt;App /&gt;,</div><div class="line">  document.getElementById(&apos;root&apos;)</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<p>目前，我的理解，就是dom的属性。</p>
+<p>然后再进一步理解state，<a href="https://facebook.github.io/react/docs/thinking-in-react.html" target="_blank" rel="external">think in react</a>有个比较精辟的结论来定义state，摘抄到下面：</p>
+<ul>
+<li>Is it passed in from a parent via props? If so, it probably isn’t state.</li>
+<li>Does it remain unchanged over time? If so, it probably isn’t state.</li>
+<li>Can you compute it based on any other state or props in your component? If so, it isn’t state.</li>
+</ul>
+<p>目前，我对于state的理解还是不太明了。记录下来，以后回来补完。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -188,126 +199,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/25/learn-react-1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/23/my-first-redux/" class="archive-article-date">
-  	<time datetime="2017-09-23T22:19:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/23/my-first-redux/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">初次的Redux</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/23/my-first-redux/">初次的Redux</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/20/tips1-how-to-install-hexo-well/" class="archive-article-date">
-  	<time datetime="2017-09-20T20:14:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/20/tips1-how-to-install-hexo-well/">首坑,Hexo安装止痛</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/keng//" class="article-tag-list-link color5">keng</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/20/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-20T19:14:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/20/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -330,8 +321,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
